@@ -1,0 +1,21 @@
+@charset "utf-8";
+body{
+
+    background-color: rgb(65, 18, 87);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: chartreuse;
+}
+
+#principal{
+    text-align: center;
+}
+
+h2{
+    color: gainsboro;
+}
+p {
+    color: firebrick;
+}
