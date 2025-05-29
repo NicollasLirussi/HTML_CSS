@@ -1,55 +1,198 @@
 @charset "utf-8";
 
-body{
-    background-image: linear-gradient(to bottom, #72ffb8, rgb(0, 156, 44));
-    background-attachment: fixed;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: #ffffff;
-    margin: 50px 400px;
-    padding: 20px;
-    border-radius: 20px 0px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a001a);
+  color: #f0eaff;
+  min-height: 100vh;
 }
 
-header>h2{
-    font-weight: lighter;
-    font-size: 1.4em;
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(40, 0, 60, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(200, 0, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-main{
-    background-color: #ffffff;
-    margin: 100px 500px;
-    padding: 10px;
-    border-radius: 20px 20px;
-    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.38);
+header h1 {
+  font-size: 2.5rem;
+  color: #b266ff;
 }
 
-footer{
-    background-color: #ffffff;
-    margin: 20px 500px;
-    padding: 10px;
-    border-radius: 20px 20px;
-    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.38);
+header p {
+  font-size: 1.2rem;
+  margin: -0.25rem 0;
+  margin-bottom: 30px;
 }
 
-ul{
-    list-style-position: inside;
-    list-style-type: '\00A0';
-    gap: 8px;
+header .links a {
+  margin: 0 15px;
+  color: #e0ccff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-a{
-    font-weight: bold;
-    color: red;
+header .links a:hover {
+  color: #ffffff;
+  padding-top: 100px;
+}
+
+
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.sobre img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: 2px solid #b266ff;
+}
+
+.sobre h2 {
+  color: #b266ff;
+}
+
+.projetos {
+  padding: 3rem 2rem;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+.projetos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d1b3ff;
+  
+}
+
+.projeto a{
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: #b266ff;
+    
 }
 
-h2{ font-size: 1.8em;
-    
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.projeto {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(180, 0, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.projeto:hover {
+  transform: scale(1.03);
+}
+
+
+
+.contato {
+  padding: 3rem 2rem;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+.contato h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d1b3ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+button {
+  background: #b266ff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #9900cc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(40, 0, 60, 0.3);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+
+
+
+.contato {
+  padding: 3rem 2rem;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+.contato h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d1b3ff;
+}
+
+.info-contato {
+  max-width: 500px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #eee;
+  padding-left: 136px;
+}
+
+.info-contato a {
+  color: #b266ff;
+  text-decoration: none;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
 }
